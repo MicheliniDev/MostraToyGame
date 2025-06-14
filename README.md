@@ -13,7 +13,7 @@
 <img src="./DiagramaMostra.png">
 <h3>Uso de Caso</h3>
 <h4>Personagem</h4>
-A classe utilizada para os personagens dentro do jogo, se comportarão diferente baseado no seu tipo (Jogador, Inimigo, Chefe, NPC). <br>
+A classe utilizada para os personagens dentro do jogo, se comportarão diferente baseado no seu tipo (Jogador, Inimigo, Chefe). <br>
 Nela são armazenadas seus atributos, como vida, dano, energia, velocidade e posição. <br>
 Também contém uma referência ao Animator para tocar animações usando seu método Animacao. Também possui métodos para mover, atacar, defender e curar vida. 
 
