@@ -25,3 +25,7 @@ O método Nascimento serve para checar os personagens presentes na fase, assim �
 <h4>Fase</h4>
 Uma classe simples, contém uma referência a seu tema de fundo, seu tileset (modelosFase) e a todos os interagíveis presentes nela.
 Utiliza do método TocarMusica para tocar seu tema de fundo.
+
+
+<h2>- [1- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/Conceitos-Utilizados)
+<h2>- [2- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/Gameplay)
