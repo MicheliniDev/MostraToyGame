@@ -28,4 +28,4 @@ Utiliza do método TocarMusica para tocar seu tema de fundo.
 
 
 - [1- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/1%E2%80%90-Conceitos-Utilizados)
-- [2- Gameplay](https://github.com/MicheliniDev/MostraToyGame/wiki/Gameplay)
+- [2- Gameplay](https://github.com/MicheliniDev/MostraToyGame/wiki/2%E2%80%90-Gameplay)
