@@ -27,5 +27,5 @@ Uma classe simples, contém uma referência a seu tema de fundo, seu tileset (mo
 Utiliza do método TocarMusica para tocar seu tema de fundo.
 
 
-- [1- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/Conceitos-Utilizados)
-- [2- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/Gameplay)
+- [1- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/1%E2%80%90-Conceitos-Utilizados)
+- [2- Gameplay](https://github.com/MicheliniDev/MostraToyGame/wiki/Gameplay)
