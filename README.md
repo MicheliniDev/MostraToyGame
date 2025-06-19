@@ -1,7 +1,7 @@
 <h1>Toy Game</h1>
 <h3>Produzido por Igor Cafazzi, Guilherme Santos, Matheus Henrique e Igor Michelini</h3>
 
-<h4>link do drive para o projeto: https://drive.google.com/file/d/18isTfCC2_tBeEU_81UaEKe2m1XJsZjwt/view?usp=sharing</h4>
+<h4>Link do drive para o projeto: https://drive.google.com/file/d/18isTfCC2_tBeEU_81UaEKe2m1XJsZjwt/view?usp=sharing</h4>
 
 <h2>Filmes Inspiração</h2>
 <ul>
@@ -28,7 +28,7 @@ O método Nascimento serve para checar os personagens presentes na fase, assim �
 Uma classe simples, contém uma referência a seu tema de fundo, seu tileset (modelosFase) e a todos os interagíveis presentes nela.
 Utiliza do método TocarMusica para tocar seu tema de fundo.
 
-## wiki
+## Wiki
 - [1- Conceitos utilizados](https://github.com/MicheliniDev/MostraToyGame/wiki/1%E2%80%90-Conceitos-Utilizados)
 - [2- Gameplay](https://github.com/MicheliniDev/MostraToyGame/wiki/2%E2%80%90-Gameplay)
 - [3- Cena cidade](https://github.com/MicheliniDev/MostraToyGame/wiki/3%E2%80%90-Cena-da-Cidade)
