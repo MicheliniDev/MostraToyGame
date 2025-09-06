@@ -1,0 +1,1228 @@
+fileFormatVersion: 2
+guid: b60151e11e52e77408ec72074ef88a5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6927460254266835130
+    second: Effects_Edyardo_0
+  - first:
+      213: -8663018673219456420
+    second: Effects_Edyardo_1
+  - first:
+      213: 4664156356890317668
+    second: Effects_Edyardo_2
+  - first:
+      213: 613115538979524956
+    second: Effects_Edyardo_3
+  - first:
+      213: 1854250287350856889
+    second: Effects_Edyardo_4
+  - first:
+      213: -8868173951286834163
+    second: Effects_Edyardo_5
+  - first:
+      213: -4907027617641125795
+    second: Effects_Edyardo_6
+  - first:
+      213: 493185522034405325
+    second: Effects_Edyardo_7
+  - first:
+      213: 506183728173474937
+    second: Effects_Edyardo_8
+  - first:
+      213: 417703069534343015
+    second: Effects_Edyardo_9
+  - first:
+      213: -4347047781877600397
+    second: Effects_Edyardo_10
+  - first:
+      213: -7088974985735755944
+    second: Effects_Edyardo_11
+  - first:
+      213: -4673215327962723928
+    second: Effects_Edyardo_12
+  - first:
+      213: 2980308081649877812
+    second: Effects_Edyardo_13
+  - first:
+      213: -2870360790280174649
+    second: Effects_Edyardo_14
+  - first:
+      213: -1104214036728001473
+    second: Effects_Edyardo_15
+  - first:
+      213: -5110483234418672915
+    second: Effects_Edyardo_16
+  - first:
+      213: -4560301356388571923
+    second: Effects_Edyardo_17
+  - first:
+      213: -979834045921267884
+    second: Effects_Edyardo_18
+  - first:
+      213: 5216902346082579640
+    second: Effects_Edyardo_19
+  - first:
+      213: 7486164688999690638
+    second: Effects_Edyardo_20
+  - first:
+      213: -764381482052198036
+    second: Effects_Edyardo_21
+  - first:
+      213: 8248325651964878739
+    second: Effects_Edyardo_22
+  - first:
+      213: -6120644066973718457
+    second: Effects_Edyardo_23
+  - first:
+      213: -5300036475408430119
+    second: Effects_Edyardo_24
+  - first:
+      213: 6183115132633224444
+    second: Effects_Edyardo_25
+  - first:
+      213: 3404933536785185391
+    second: Effects_Edyardo_26
+  - first:
+      213: 5335814083308557373
+    second: Effects_Edyardo_27
+  - first:
+      213: -5394628726764433416
+    second: Effects_Edyardo_28
+  - first:
+      213: -5354184552172794523
+    second: Effects_Edyardo_29
+  - first:
+      213: 4380919951070220279
+    second: Effects_Edyardo_30
+  - first:
+      213: -3674393790832784137
+    second: Effects_Edyardo_31
+  - first:
+      213: -6769528187336234933
+    second: Effects_Edyardo_32
+  - first:
+      213: -7848172414144843193
+    second: Effects_Edyardo_33
+  - first:
+      213: -3344108500934410219
+    second: Effects_Edyardo_34
+  - first:
+      213: 4129372520397330838
+    second: Effects_Edyardo_35
+  - first:
+      213: -5301164839306840634
+    second: Effects_Edyardo_36
+  - first:
+      213: 2034467133271894836
+    second: Effects_Edyardo_37
+  - first:
+      213: 5653564082382818803
+    second: Effects_Edyardo_38
+  - first:
+      213: -6138735811630307055
+    second: Effects_Edyardo_39
+  - first:
+      213: -8097813089695767886
+    second: Effects_Edyardo_40
+  - first:
+      213: -4546397424740246766
+    second: Effects_Edyardo_41
+  - first:
+      213: -5556366515137346205
+    second: Effects_Edyardo_42
+  - first:
+      213: 6990038776461630640
+    second: Effects_Edyardo_43
+  - first:
+      213: 9137736500312503180
+    second: Effects_Edyardo_44
+  - first:
+      213: -3131738412305968343
+    second: Effects_Edyardo_45
+  - first:
+      213: -1000555692424007842
+    second: Effects_Edyardo_46
+  - first:
+      213: 4717955909698101838
+    second: Effects_Edyardo_47
+  - first:
+      213: 6952729810069818459
+    second: Effects_Edyardo_48
+  - first:
+      213: -3456445782817279126
+    second: Effects_Edyardo_49
+  - first:
+      213: -7346802513774603181
+    second: Effects_Edyardo_50
+  - first:
+      213: 7700105800633155251
+    second: Effects_Edyardo_51
+  - first:
+      213: 5201881494070909087
+    second: Effects_Edyardo_52
+  - first:
+      213: 5556105584264228766
+    second: Effects_Edyardo_53
+  - first:
+      213: 963783723725894056
+    second: Effects_Edyardo_54
+  - first:
+      213: 5909030819549609092
+    second: Effects_Edyardo_55
+  - first:
+      213: -6493866208086086080
+    second: Effects_Edyardo_56
+  - first:
+      213: -6294297012562032803
+    second: Effects_Edyardo_57
+  - first:
+      213: -7245239834470382957
+    second: Effects_Edyardo_58
+  - first:
+      213: 7652528512726906941
+    second: Effects_Edyardo_59
+  - first:
+      213: -3046829386130576807
+    second: Effects_Edyardo_60
+  - first:
+      213: 8590275747005461883
+    second: Effects_Edyardo_61
+  - first:
+      213: 4571213589842440814
+    second: Effects_Edyardo_62
+  - first:
+      213: 2242520815079632815
+    second: Effects_Edyardo_63
+  - first:
+      213: -4765815450673082247
+    second: Effects_Edyardo_64
+  - first:
+      213: 2318475233409888464
+    second: Effects_Edyardo_65
+  - first:
+      213: -5845252483174593911
+    second: Effects_Edyardo_66
+  - first:
+      213: -1097225309693399536
+    second: Effects_Edyardo_67
+  - first:
+      213: -2760924477976624318
+    second: Effects_Edyardo_68
+  - first:
+      213: 1784043012019980818
+    second: Effects_Edyardo_69
+  - first:
+      213: 1638559364927639317
+    second: Effects_Edyardo_70
+  - first:
+      213: -3292737304230585417
+    second: Effects_Edyardo_71
+  - first:
+      213: 8104558063961605040
+    second: Effects_Edyardo_72
+  - first:
+      213: -101159854996004140
+    second: Effects_Edyardo_73
+  - first:
+      213: -7915724634855103459
+    second: Effects_Edyardo_74
+  - first:
+      213: 6549343302230280842
+    second: Effects_Edyardo_75
+  - first:
+      213: 5839286822743375302
+    second: Effects_Edyardo_76
+  - first:
+      213: 2055232628890351324
+    second: Effects_Edyardo_77
+  - first:
+      213: -3668635353677149208
+    second: Effects_Edyardo_78
+  - first:
+      213: 13778713949288897
+    second: Effects_Edyardo_79
+  - first:
+      213: 5349294297890732461
+    second: Effects_Edyardo_80
+  - first:
+      213: 827182790740286077
+    second: Effects_Edyardo_81
+  - first:
+      213: -2607446998284626527
+    second: Effects_Edyardo_82
+  - first:
+      213: -8555139313210010286
+    second: Effects_Edyardo_83
+  - first:
+      213: 348433822882304526
+    second: Effects_Edyardo_84
+  - first:
+      213: 547372800371849678
+    second: Effects_Edyardo_85
+  - first:
+      213: -2919409082787146604
+    second: Effects_Edyardo_86
+  - first:
+      213: 5327371421031067379
+    second: Effects_Edyardo_87
+  - first:
+      213: 660808797454157451
+    second: Effects_Edyardo_88
+  - first:
+      213: 5185428736139238657
+    second: Effects_Edyardo_89
+  - first:
+      213: 6211321746253143200
+    second: Effects_Edyardo_90
+  - first:
+      213: -4265650273508053562
+    second: Effects_Edyardo_91
+  - first:
+      213: 1887954242755167157
+    second: Effects_Edyardo_92
+  - first:
+      213: -3829411044420061518
+    second: Effects_Edyardo_93
+  - first:
+      213: 6817862868165025899
+    second: Effects_Edyardo_94
+  - first:
+      213: -7262846109731367377
+    second: Effects_Edyardo_95
+  - first:
+      213: -4446078307832653627
+    second: Effects_Edyardo_96
+  - first:
+      213: 6397286343085873188
+    second: Effects_Edyardo_97
+  - first:
+      213: -6220363611528155209
+    second: Effects_Edyardo_98
+  - first:
+      213: -6127196700466278323
+    second: Effects_Edyardo_99
+  - first:
+      213: -1520197923148829904
+    second: Effects_Edyardo_100
+  - first:
+      213: -1599951807680001462
+    second: Effects_Edyardo_101
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effects_Edyardo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab04633e568432060800000000000000
+      internalID: 6927460254266835130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52bd245a66c6c780800000000000000
+      internalID: -8663018673219456420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463d35dae796ab040800000000000000
+      internalID: 4664156356890317668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5195239559328800800000000000000
+      internalID: 613115538979524956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcb636efce9bb910800000000000000
+      internalID: 1854250287350856889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c0d23e6caede480800000000000000
+      internalID: -8868173951286834163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58287b516cb6ebb0800000000000000
+      internalID: -4907027617641125795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfe9398e9528d600800000000000000
+      internalID: 493185522034405325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974ecdc3b63560700800000000000000
+      internalID: 506183728173474937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f4f298abafbc500800000000000000
+      internalID: 417703069534343015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f2983f21f2ca3c0800000000000000
+      internalID: -4347047781877600397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85727993fc6ee9d90800000000000000
+      internalID: -7088974985735755944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a90fd14b67652fb0800000000000000
+      internalID: -4673215327962723928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43387ffe86e2c5920800000000000000
+      internalID: 2980308081649877812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3042ea11e6a28d0800000000000000
+      internalID: -2870360790280174649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cc3d81f2b0da0f0800000000000000
+      internalID: -1104214036728001473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deab2e5239ae319b0800000000000000
+      internalID: -5110483234418672915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de42abfe31e86b0c0800000000000000
+      internalID: -4560301356388571923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f670a602ee662f0800000000000000
+      internalID: -979834045921267884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4772e1b09266840800000000000000
+      internalID: 5216902346082579640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8136e90f1334e760800000000000000
+      internalID: 7486164688999690638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_21
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c616469871f5465f0800000000000000
+      internalID: -764381482052198036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_22
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fdb1d9a70f77270800000000000000
+      internalID: 8248325651964878739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_23
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748ed6f46aa1f0ba0800000000000000
+      internalID: -6120644066973718457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_24
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbcaaa08ec7276b0800000000000000
+      internalID: -5300036475408430119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf412fd1476dec550800000000000000
+      internalID: 6183115132633224444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_26
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a35e7f201c04f20800000000000000
+      internalID: 3404933536785185391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_27
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34122f63ae9c0a40800000000000000
+      internalID: 5335814083308557373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_28
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff861641cd6225b0800000000000000
+      internalID: -5394628726764433416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_29
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d4bd9748d12b5b0800000000000000
+      internalID: -5354184552172794523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_30
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff46f00c772ccc30800000000000000
+      internalID: 4380919951070220279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_31
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fcc284a05ee10dc0800000000000000
+      internalID: -3674393790832784137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_32
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4864d8eafdcd02a0800000000000000
+      internalID: -6769528187336234933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_33
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74270ee45c0b51390800000000000000
+      internalID: -7848172414144843193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effects_Edyardo_34
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510c07749075791d0800000000000000
+      internalID: -3344108500934410219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd5600a697e1d1e4aa7c7f5201148679
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Effects_Edyardo_0: 6927460254266835130
+      Effects_Edyardo_1: -8663018673219456420
+      Effects_Edyardo_10: -4347047781877600397
+      Effects_Edyardo_11: -7088974985735755944
+      Effects_Edyardo_12: -4673215327962723928
+      Effects_Edyardo_13: 2980308081649877812
+      Effects_Edyardo_14: -2870360790280174649
+      Effects_Edyardo_15: -1104214036728001473
+      Effects_Edyardo_16: -5110483234418672915
+      Effects_Edyardo_17: -4560301356388571923
+      Effects_Edyardo_18: -979834045921267884
+      Effects_Edyardo_19: 5216902346082579640
+      Effects_Edyardo_2: 4664156356890317668
+      Effects_Edyardo_20: 7486164688999690638
+      Effects_Edyardo_21: -764381482052198036
+      Effects_Edyardo_22: 8248325651964878739
+      Effects_Edyardo_23: -6120644066973718457
+      Effects_Edyardo_24: -5300036475408430119
+      Effects_Edyardo_25: 6183115132633224444
+      Effects_Edyardo_26: 3404933536785185391
+      Effects_Edyardo_27: 5335814083308557373
+      Effects_Edyardo_28: -5394628726764433416
+      Effects_Edyardo_29: -5354184552172794523
+      Effects_Edyardo_3: 613115538979524956
+      Effects_Edyardo_30: 4380919951070220279
+      Effects_Edyardo_31: -3674393790832784137
+      Effects_Edyardo_32: -6769528187336234933
+      Effects_Edyardo_33: -7848172414144843193
+      Effects_Edyardo_34: -3344108500934410219
+      Effects_Edyardo_4: 1854250287350856889
+      Effects_Edyardo_5: -8868173951286834163
+      Effects_Edyardo_6: -4907027617641125795
+      Effects_Edyardo_7: 493185522034405325
+      Effects_Edyardo_8: 506183728173474937
+      Effects_Edyardo_9: 417703069534343015
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

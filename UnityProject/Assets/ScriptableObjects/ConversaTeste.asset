@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051d7de69378fd4988a3e7e796b3bfa, type: 3}
+  m_Name: ConversaTeste
+  m_EditorClassIdentifier: 
+  conversation:
+  - characterName: Edyardo
+    position: -1
+    characterSprite: {fileID: 21300000, guid: ea7f0d7770ea2fd4b9a4bb298fbeef40, type: 3}
+    dialogue: "Ol\xE1, meu nome \xE9 Edyardo"
+    typeSpeed: 0.1
+  - characterName: Oswald
+    position: 1
+    characterSprite: {fileID: 21300000, guid: 8200144a37ea7ef4ca69213c31399f65, type: 3}
+    dialogue: Heheheh oswald
+    typeSpeed: 0.25
