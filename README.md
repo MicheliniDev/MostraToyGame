@@ -6,18 +6,18 @@
 - Igor Cafazzi
 - Igor Michelini Pereira
 
-## Filmes Inspiração
+### Filmes Inspiração
 - Toy Story
 - Flow
 - Extraordinário
 - Sonhos Roubados
 
-## Jogos Inspiração
+### Jogos Inspiração
 - Sonic
 - Nine Sols
 - Mario
 
-## Informações Gerais
+### Informações Gerais
 
 Eduardo’s Awakening é um jogo de aventura e plataforma 2D ambientado na Era Vitoriana. O jogador assume o papel de Eduardo, um garoto que descobre que seus brinquedos de infância não são tão comuns quanto parecem: eles são artefatos, objetos aparentemente ordinários que escondem habilidades extraordinárias.
 
