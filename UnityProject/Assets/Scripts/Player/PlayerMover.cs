@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using System.Collections.Generic;
 using System;
 
 namespace ToyGame.Physics
@@ -20,7 +19,9 @@ namespace ToyGame.Physics
         public float jumpSpeed = 6f;          
         private bool isJumping = false;
         private bool isJumpCanceling = false;
-
+        [SerializeField, Range(0f, 0.5f)] private float coyoteTime = .125f;
+        private float coyoteTimer = 0f;
+        
         public float MovementAxis;
 
         public Vector2 Velocity
@@ -48,7 +49,7 @@ namespace ToyGame.Physics
         {
             MovementAxis = InputManager.instance.GetAxis("Move");
 
-            if (InputManager.instance.GetActionDown("Jump") && isGrounded)
+            if (InputManager.instance.GetActionDown("Jump") && (isGrounded || coyoteTimer <= coyoteTime))
             {
                 isJumping = true;
             }
@@ -56,6 +57,13 @@ namespace ToyGame.Physics
             {
                 isJumpCanceling = true;
             }
+
+            if (isGrounded && !isJumping)
+                coyoteTimer = 0f;
+            else if (isJumping)
+                coyoteTimer = 999f;
+            else
+                coyoteTimer += Time.deltaTime;
         }
 
         private void FixedUpdate()

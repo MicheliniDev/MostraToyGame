@@ -9,6 +9,8 @@ namespace ToyGame
         [SerializeField] private LevelConnection connection;
         private SceneConnection connectionToMake;
 
+        public bool CheckScene = false;
+
         private void Reset()
         {
             GetComponent<BoxCollider2D>().isTrigger = true;
@@ -17,14 +19,21 @@ namespace ToyGame
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject != Player.instance.gameObject) return;
-            for (int i = 0; i < connection.connections.Count; i++)
+            if (CheckScene == true)
             {
-                if (connection.connections[i].scene.SceneName == SceneManager.GetActiveScene().name)
+                connectionToMake = connection.connections[0];
+            }
+            else 
+            { 
+                for (int i = 0; i < connection.connections.Count; i++)
                 {
-                    continue;
+                    if (connection.connections[i].scene.SceneName == SceneManager.GetActiveScene().name)
+                    {
+                        continue;
+                    }
+                    connectionToMake = connection.connections[i];
+                    break;
                 }
-                connectionToMake = connection.connections[i];
-                break;
             }
             GameManager.instance.LoadLevel(connectionToMake);
         }

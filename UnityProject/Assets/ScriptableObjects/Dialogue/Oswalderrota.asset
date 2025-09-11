@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051d7de69378fd4988a3e7e796b3bfa, type: 3}
+  m_Name: Oswalderrota
+  m_EditorClassIdentifier: 
+  conversation:
+  - characterName: Oswald
+    position: 0
+    localizedDialogue:
+    - language: 0
+      text: "N\xE3o esperava tanta for\xE7a de um garoto t\xE3o jovem."
+    - language: 1
+      text: I didn't expect such strength coming from a young boy.
+    dialogue: "N\xE3o esperava tanta for\xE7a de um garoto t\xE3o jovem."
+    typeSpeed: 0.35
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Voc\xEA ganhou meu respeito Eduardo."
+    - language: 1
+      text: You won my respect Eduardo.
+    dialogue: "Voc\xEA ganhou meu respeito Eduardo."
+    typeSpeed: 0.3
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "Muito obrigado, o senhor tamb\xE9m \xE9 bastante poderoso."
+    - language: 1
+      text: Thank you, you are quite powerful yourself.
+    dialogue: "Muito obrigado, o senhor tamb\xE9m \xE9 bastante poderoso."
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: Hahaha! Obrigado.
+    - language: 1
+      text: Thank you.
+    dialogue: Hahaha! Obrigado
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Eduardo, quero que voc\xEA adentre a OCP, e derrote os outros pesadelos
+        que l\xE1 invadiram."
+    - language: 1
+      text: Eduardo, you should join the OCP, and defeat the other nightmares that
+        were able to invade it.
+    dialogue: "Eduardo, quero que voc\xEA adentre a OCP, e derrote os outros pesadelos
+      que l\xE1 invadiram."
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Enquanto isso eu cuidarei da reta guarda para voc\xEA."
+    - language: 1
+      text: As for me, I shall take care of the sidelines.
+    dialogue: "Enquanto isso eu cuidarei da reta guarda para voc\xEA."
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Agora v\xE1 garoto, e brilhe como a estrela que voc\xEA \xE9."
+    - language: 1
+      text: Now go kid, and shine like the star you really are.
+    dialogue: "Agora v\xE1 garoto, e brilhe como a estrela que voc\xEA \xE9."
+    typeSpeed: 0.3
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: Ok senhor.
+    - language: 1
+      text: Ok sir.
+    dialogue: Ok senhor.
+    typeSpeed: 0.3

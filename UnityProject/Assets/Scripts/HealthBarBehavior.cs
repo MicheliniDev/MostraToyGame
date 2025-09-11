@@ -15,7 +15,11 @@ namespace ToyGame
             healthBar.value = owner.CurrentHealth;
         }
 
-        private void Update() => transform.position = healthBarPos.position;
+        private void Update()
+        {
+            if (healthBarPos == null) return;
+            transform.position = healthBarPos.position;
+        }
         private void OnEnable() => owner.OnHealthChanged += UpdateHealthBar;
         private void OnDisable() => owner.OnHealthChanged -= UpdateHealthBar;
         private void UpdateHealthBar() => healthBar.value = owner.CurrentHealth;

@@ -18,6 +18,7 @@ namespace ToyGame
         [HideInInspector] public EnemyHealth health;
         [HideInInspector] public PlayerSensor engageSensor;
         [HideInInspector] public AttackSensor attackSensor;
+        [HideInInspector] public EnemyEffectsCollection effects;
 
         public Transform CurrentTarget;
         
@@ -32,6 +33,7 @@ namespace ToyGame
             health = GetComponentInChildren<EnemyHealth>();
             engageSensor = GetComponentInChildren<PlayerSensor>();
             attackSensor = GetComponentInChildren<AttackSensor>();
+            effects = GetComponentInChildren<EnemyEffectsCollection>();
         }
 
         private void Update()
@@ -54,8 +56,9 @@ namespace ToyGame
 
         public void GoToTarget(float movementVelocity)
         {
+            if (CurrentTarget == null) return;
+
             Vector2 direction = (CurrentTarget.position - transform.position).normalized;
-            //enemyMover.ApplyMovement(new Vector2(direction.x * movementVelocity, 0f));
             enemyMover.MovementVelocity.x = direction.x * movementVelocity; 
         }
 

@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.Rendering.VirtualTexturing;
 
 namespace ToyGame
 {
@@ -17,14 +19,10 @@ namespace ToyGame
 
         private Dictionary<string, ActionInput> actions = new();
         private Dictionary<string, AxisInput> axes = new();
-
-        private EventSystem eventSystem;
-        private GameObject lastSelected;
-        private float nextRepeatTime;
-
-        [Header("UI Navigation Settings")]
-        public float repeatDelay = 0.4f;
-        public float repeatRate = 0.1f;
+        
+        GameObject lastSelectedGameObject;
+        GameObject currentSelectedGameObject_Recent;
+        
         private void Awake()
         {
             if (instance != null && instance != this)
@@ -48,7 +46,8 @@ namespace ToyGame
             RegisterAction("Cancel", InputMap.UI, KeyCode.Backspace, KeyCode.JoystickButton0);
             RegisterAction("Resume", InputMap.UI, KeyCode.Escape, KeyCode.JoystickButton7); //KeyCode.JoystickButton9
 
-            RegisterAction("AdvanceDialogue", InputMap.Dialogue, KeyCode.Space, KeyCode.Return, KeyCode.JoystickButton1, KeyCode.JoystickButton2);
+            RegisterAction("AdvanceDialogue", InputMap.Dialogue, KeyCode.Space, KeyCode.Return, KeyCode.JoystickButton0, KeyCode.JoystickButton1);
+            RegisterAction("SkipDialogue", InputMap.Dialogue, KeyCode.Escape, KeyCode.JoystickButton7);
         }
 
         private void Update()
@@ -70,76 +69,24 @@ namespace ToyGame
                 if (activeMap == axis.Value.map)
                     axis.Value.Update();
             }
-
+            
             if (activeMap == InputMap.UI)
             {
-                UpdateUI();
+                CheckPointerExit();
             }
         }
 
-        #region UI Handling
-        private void UpdateUI()
+        public InputMap GetActiveMap() => activeMap;
+
+        private void CheckPointerExit()
         {
-            if (eventSystem == null) return;
-
-            if (eventSystem.currentSelectedGameObject == null && lastSelected != null)
-                eventSystem.SetSelectedGameObject(lastSelected);
-            else
-                lastSelected = eventSystem.currentSelectedGameObject;
-
-            HandleNavigation();
-            HandleSubmitCancel();
-        }
-
-        void HandleNavigation()
-        {
-            Vector2 move = new Vector2(GetAxis("UINavigateHorizontal"), GetAxis("UINavigateVertical"));
-
-            if (move.sqrMagnitude > 0.1f)
+            if (EventSystem.current == null) return;
+            if (EventSystem.current.currentSelectedGameObject != currentSelectedGameObject_Recent)
             {
-                if (Time.time >= nextRepeatTime)
-                {
-                    SendMove(move);
-                    nextRepeatTime = Time.time + repeatDelay;
-                }
+                lastSelectedGameObject = currentSelectedGameObject_Recent;
+                currentSelectedGameObject_Recent = EventSystem.current.currentSelectedGameObject;
             }
         }
-
-        private void HandleSubmitCancel()
-        {
-            if (GetActionDown("Submit"))
-            {
-                var data = new BaseEventData(eventSystem);
-                ExecuteEvents.Execute(eventSystem.currentSelectedGameObject, data, ExecuteEvents.submitHandler);
-            }
-
-            if (GetActionDown("Cancel"))
-            {
-                var data = new BaseEventData(eventSystem);
-                ExecuteEvents.Execute(eventSystem.currentSelectedGameObject, data, ExecuteEvents.cancelHandler);
-            }
-        }
-
-        private void SendMove(Vector2 move)
-        {
-            var data = new AxisEventData(eventSystem)
-            {
-                moveVector = move,
-                moveDir = GetMoveDirection(move)
-            };
-
-            ExecuteEvents.Execute(eventSystem.currentSelectedGameObject, data, ExecuteEvents.moveHandler);
-        }
-
-        private MoveDirection GetMoveDirection(Vector2 move)
-        {
-            if (Mathf.Abs(move.x) > Mathf.Abs(move.y))
-                return move.x > 0 ? MoveDirection.Right : MoveDirection.Left;
-            else if (move.y != 0)
-                return move.y > 0 ? MoveDirection.Up : MoveDirection.Down;
-            return MoveDirection.None;
-        }
-        #endregion
 
         public float GetAxis(string axisName)
         {

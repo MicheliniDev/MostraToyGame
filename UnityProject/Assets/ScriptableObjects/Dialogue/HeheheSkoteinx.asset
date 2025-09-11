@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051d7de69378fd4988a3e7e796b3bfa, type: 3}
+  m_Name: HeheheSkoteinx
+  m_EditorClassIdentifier: 
+  conversation:
+  - characterName: Skoteinix
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Voc\xEA n\xE3o me vencer\xE1 Eduardo"
+    - language: 1
+      text: You cannot win agaisnt me, Eduardo!
+    dialogue: "Voc\xEA n\xE3o me vencer\xE1! Eduardo"
+    typeSpeed: 0.15
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: Nah, eu venceria.
+    - language: 1
+      text: Nah, I'd win
+    dialogue: Nah, eu venceria.
+    typeSpeed: 0.3

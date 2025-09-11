@@ -8,13 +8,10 @@ namespace ToyGame.FSM
     {
         public override PlayerStateType StateType => PlayerStateType.Revival;
 
+        public bool isDeathBySkoteinix0;
         public override void OnAnimationEvent(PlayerAnimationEvents.PlayerAnimationEventTag tag)
         {
             base.OnAnimationEvent(tag);
-            if (tag == PlayerAnimationEvents.PlayerAnimationEventTag.Done)
-            {
-                fsm.ChangeState(PlayerStateType.Normal);
-            }
         }
 
         public override void OnStateEnter()
@@ -44,21 +41,47 @@ namespace ToyGame.FSM
 
             player.health.GainFull();
             player.health.BecomeInvincible();
-            AsyncOperation sceneReload = SceneManager.LoadSceneAsync(player.Checkpoint.scene.name);
-            while (!sceneReload.isDone)
+
+            Debug.Log(player.Checkpoint.scene.name);
+
+            if (!isDeathBySkoteinix0)
             {
-                if (sceneReload.progress > 0.95f)
+                if (player.Checkpoint.scene.name == null)
                 {
-                    sceneReload.allowSceneActivation = true;
+                    player.Checkpoint.scene = SceneManager.GetActiveScene();
+                    yield return null;
                 }
-                yield return null;
+                AsyncOperation sceneReload = SceneManager.LoadSceneAsync(player.Checkpoint.scene.name);
+                while (!sceneReload.isDone)
+                {
+                    if (sceneReload.progress > 0.95f)
+                    {
+                        sceneReload.allowSceneActivation = true;
+                    }
+                    yield return null;
+                }
+                player.transform.position = player.Checkpoint.position;
+            }
+            else
+            {
+                AsyncOperation sceneReload = SceneManager.LoadSceneAsync("MundoSonhos");
+                while (!sceneReload.isDone)
+                {
+                    if (sceneReload.progress > 0.95f)
+                    {
+                        sceneReload.allowSceneActivation = true;
+                    }
+                    yield return null;
+                }
+                player.transform.position = Vector2.zero;
             }
             player.health.RemoveInvincible();
-            player.transform.position = player.Checkpoint.position;
+            player.CUrrentHealAmount = player.MaxHealAmount;
             fsm.ChangeState(PlayerStateType.Normal);
             yield return new WaitForSeconds(.2f);
 
             GameManager.instance.FadeLoadingScreenOut();
+            isDeathBySkoteinix0 = false;
             yield return null;
         }
     }

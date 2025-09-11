@@ -50,9 +50,18 @@ namespace ToyGame.FSM
 
         private void SetWanderingPoint(int index)
         {
+            if (wanderingPoints.Length == 0 || wanderingPoints == null || enemy.CurrentTarget == null) return;
+
             enemy.CurrentTarget = wanderingPoints[index];
         }
 
-        private bool CheckTargetReached() => Mathf.Abs(enemy.CurrentTarget.position.x - enemy.transform.position.x) < 0.5f;
+        private bool CheckTargetReached()
+        {
+            if (enemy.CurrentTarget == null) 
+            {
+                return false;
+            }
+            return Mathf.Abs(enemy.CurrentTarget.position.x - enemy.transform.position.x) < 0.5f;
+        }
     }
 }

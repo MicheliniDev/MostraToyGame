@@ -13,10 +13,11 @@ namespace ToyGame
         public UnityEvent OnPlayerDeath;
         public UnityEvent OnPlayerHurt;
 
-        private bool isInvincible;
+        [SerializeField] private bool isInvincible;
+        public bool IsInvincible => isInvincible;
         void Awake()
         {
-            MaxHealth = maxHealth;
+            MaxHealth = GameManager.instance.isEasyMode ? maxHealth * 10 : maxHealth;
         }
 
         public override void LoseHealthByDealer(DamageDealer dealer)
@@ -47,6 +48,10 @@ namespace ToyGame
                 yield return null;
             }
             base.LoseHealthByDealer(dealer);
+
+            if (dealer == null)
+                yield break;
+
             if (dealer.parryData is ParryDataProjectile)
             {
                 var projectile = dealer.parryData as ParryDataProjectile;
@@ -73,13 +78,6 @@ namespace ToyGame
         {
             base.HandleDeath();
             OnPlayerDeath?.Invoke();
-        }
-
-        private void OnGUI()
-        {
-            GUILayout.BeginArea(new Rect(10f, 10f, 200f, 100f));
-            GUILayout.Label($"<color='white'><size=100>{CurrentHealth}</size></color>");
-            GUILayout.EndArea();
         }
     }
 }

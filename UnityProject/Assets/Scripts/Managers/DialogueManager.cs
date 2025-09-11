@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace ToyGame
@@ -9,15 +10,13 @@ namespace ToyGame
     {
         public static DialogueManager instance;
 
+        public UnityEvent OnDialogueEnd;
         private SO_Dialogue currentConversation;
         private int currentDialogueIndex;
 
         public GameObject DialogueWrapper;
         public GameObject ContinueDialogueArrow;
         public TextMeshProUGUI DialogueText;
-
-        public Image DialogueCharacterImageLeft;
-        public Image DialogueCharacterImageRight;
         public TextMeshProUGUI DialogueCharacterNameLeft;
         public TextMeshProUGUI DialogueCharacterNameRight;
         private void Awake()
@@ -31,10 +30,23 @@ namespace ToyGame
 
         private void Update()
         {
+            if (currentConversation != null && Player.instance.playerMover.canMove)
+            {
+                Player.instance.playerMover.canMove = false;
+                Player.instance.playerMover.Velocity = Vector2.zero;
+            }
+
+            if (currentConversation != null && !Player.instance.health.IsInvincible)
+                Player.instance.health.BecomeInvincible();
+
             if (InputManager.instance.GetActionDown("AdvanceDialogue") && currentConversation != null)
             {
                 AdvanceDialogue();
             }    
+            if (InputManager.instance.GetActionDown("SkipDialogue") && currentConversation != null)
+            {
+                EndDialogue();
+            }
         }
 
         public void StartDialogue(SO_Dialogue dialogue)
@@ -46,20 +58,22 @@ namespace ToyGame
             }
             InputManager.instance.SwitchCurrentActionMap(InputMap.Dialogue);
             Player.instance.health.BecomeInvincible();
+            Player.instance.playerMover.Velocity = Vector2.zero;
+            Player.instance.playerMover.canMove = false;
             currentConversation = dialogue;
 
             DialogueWrapper.SetActive(true);
             SetCharacterSpriteAndName(currentConversation);
 
-            StartCoroutine(TypeDialogue(currentConversation));
+            StartCoroutine(TypeDialogue(currentConversation, GetTranslatedDialogue()));
         }
 
         public void AdvanceDialogue()
         {
-            if (DialogueText.text != currentConversation.conversation[currentDialogueIndex].dialogue)
+            if (DialogueText.text != GetTranslatedDialogue())
             {
                 StopAllCoroutines();
-                DialogueText.text = currentConversation.conversation[currentDialogueIndex].dialogue;
+                DialogueText.text = GetTranslatedDialogue();
                 ContinueDialogueArrow.SetActive(true);
                 return;
             }
@@ -74,13 +88,13 @@ namespace ToyGame
             DialogueText.text = string.Empty;
             currentDialogueIndex++;
             SetCharacterSpriteAndName(currentConversation);
-            StartCoroutine(TypeDialogue(currentConversation));
+            StartCoroutine(TypeDialogue(currentConversation, GetTranslatedDialogue()));
         }
 
-        private IEnumerator TypeDialogue(SO_Dialogue dialogue)
+        private IEnumerator TypeDialogue(SO_Dialogue dialogue, string dialogueText)
         {
             var currentConversation = dialogue.conversation[currentDialogueIndex];
-            var currentDialogueArray = currentConversation.dialogue.ToCharArray();
+            var currentDialogueArray = dialogueText.ToCharArray();
             for (int i = 0; i < currentDialogueArray.Length; i++)
             {
                 DialogueText.text += currentDialogueArray[i];
@@ -97,21 +111,11 @@ namespace ToyGame
             var current = conversation.conversation[currentDialogueIndex];
             switch (current.position) { 
                 case Facings.Left:
-                    DialogueCharacterImageRight.sprite = null;
-                    DialogueCharacterImageRight.color = emptyColor;
                     DialogueCharacterNameRight.text = string.Empty;
-
-                    DialogueCharacterImageLeft.sprite = current.characterSprite;
-                    DialogueCharacterImageLeft.color = fullColor;
                     DialogueCharacterNameLeft.text = current.characterName;
                     break;
                 case Facings.Right:
-                    DialogueCharacterImageLeft.sprite = null;
-                    DialogueCharacterImageLeft.color = emptyColor;
                     DialogueCharacterNameLeft.text = string.Empty;
-
-                    DialogueCharacterImageRight.sprite = current.characterSprite;
-                    DialogueCharacterImageRight.color = fullColor;
                     DialogueCharacterNameRight.text = current.characterName;
                     break;
             }
@@ -120,11 +124,15 @@ namespace ToyGame
         public void EndDialogue()
         {
             currentConversation = null;
-            DialogueText.text = string.Empty;
+            DialogueText.text = "";
             DialogueWrapper.SetActive(false);
             InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
             Player.instance.health.RemoveInvincible();
             currentDialogueIndex = 0;
+            Player.instance.playerMover.canMove = true;
+            OnDialogueEnd?.Invoke();
         }
+
+        public string GetTranslatedDialogue() => currentConversation.conversation[currentDialogueIndex].GetTranslatedText(GameManager.instance.CurrentLanguage);
     }
 }

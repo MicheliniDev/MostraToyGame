@@ -28,6 +28,10 @@ namespace ToyGame
 
         public PlayerCheckpoint Checkpoint;
 
+        public int MaxHealAmount = 4;
+        public int CUrrentHealAmount;
+        [SerializeField] private GameObject[] healToysUI;
+
         public SO_Dialogue test;
         void Awake()
         {
@@ -37,9 +41,8 @@ namespace ToyGame
             }
             instance = this;
 
-            Checkpoint = new PlayerCheckpoint();
-            Checkpoint.scene = SceneManager.GetActiveScene();
-            Checkpoint.position = Vector3.zero;
+            CUrrentHealAmount = MaxHealAmount;
+            UpdateHealToys();
         }
 
         private void Update()
@@ -78,22 +81,27 @@ namespace ToyGame
             }
         }
 
+        public void UpdateHealToys()
+        {
+            for (int i = 0; i < MaxHealAmount; i++)
+            {
+                healToysUI[i].SetActive(i < CUrrentHealAmount);
+            }
+        }
+
         public void Pause()
         {
-            TimeManager.instance.PauseTime();
-            GameManager.instance.isPaused = true;
-            GameManager.instance.FadeInPauseMenu();
-            SoundManager.instance.MuffleBGM(.5f);
-            InputManager.instance.SwitchCurrentActionMap(InputMap.UI);
+            GameManager.instance.Pause();
         }
 
         public void Resume()
         {
-            TimeManager.instance.ResumeTime();
-            GameManager.instance.isPaused = false;
-            GameManager.instance.FadeOutPauseMenu();
-            SoundManager.instance.UnmuffleBGM(.5f);
-            StartCoroutine(WaitForFrame());
+            GameManager.instance.Resume();
+        }
+
+        public void Quit()
+        {
+            GameManager.instance.QuitGame();
         }
 
         IEnumerator WaitForFrame()
@@ -101,6 +109,7 @@ namespace ToyGame
             yield return null;
             InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
         }
+
         public Facings GetCurrentFacing()
         {
             Facings facving = (this as IFacingFlippable).CurrentFacing;
@@ -115,13 +124,16 @@ namespace ToyGame
             Checkpoint = checkpoint;
         }
 
-        private void OnDrawGizmosSelected()
+        public void ResetLevel()
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, 2f);
+            health.GainFull();
+            CUrrentHealAmount = MaxHealAmount;
+            UpdateHealToys();
+            SceneManager.LoadSceneAsync(Checkpoint.scene.name);
         }
     }
 
+    [System.Serializable]
     public struct PlayerCheckpoint {
         public Scene scene;
         public Vector2 position;

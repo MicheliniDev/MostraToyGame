@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051d7de69378fd4988a3e7e796b3bfa, type: 3}
+  m_Name: Gato
+  m_EditorClassIdentifier: 
+  conversation:
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: Eduardo...
+    - language: 1
+      text: Eduardo...
+    dialogue: Eduardo...
+    typeSpeed: 0
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "CHICO!! Desde quando voc\xEA fala?"
+    - language: 1
+      text: CHICO!! Since when are you able to speak?
+    dialogue: "CHICO!! Desde quando voc\xEA fala?"
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Mas eu n\xE3o falo, este mundo que n\xE3o \xE9 real."
+    - language: 1
+      text: I don't, this world is not real.
+    dialogue: "Mas eu n\xE3o falo, este mundo que n\xE3o \xE9 real."
+    typeSpeed: 0
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "Como assim? Sobre o que voc\xEA est\xE1 dizendo?"
+    - language: 1
+      text: What do you mean? What are you saying?
+    dialogue: "Como assim? Sobre o que voc\xEA est\xE1 dizendo?"
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Est\xE1 realidade atual \xE9 apenas a sua imagina\xE7\xE3o."
+    - language: 1
+      text: This reality was made by your imagination.
+    dialogue: "Est\xE1 realidade atual \xE9 apenas a sua imagina\xE7\xE3o."
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Voc\xEA esta preso nela como uma zona de conforto. "
+    - language: 1
+      text: You are stuck in it as a form of comfort zone.
+    dialogue: "Voc\xEA esta preso nela como uma zona de conforto. "
+    typeSpeed: 0
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: Mas.. Mas, como eu sairei deste lugar?
+    - language: 1
+      text: How do I leave this place?
+    dialogue: Mas.. Mas, como eu sairei deste lugar?
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Se voc\xEA se sente preparado, se aproxime daquela arvore ao meu lado,
+        e volte ao seu lugar."
+    - language: 1
+      text: Once you feel prepared, approach the tree beside me, and return to your
+        world.
+    dialogue: "Se voc\xEA se sente preparado, se aproxime daquela arvore ao meu lado,
+      e volte ao seu lugar."
+    typeSpeed: 0
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "Mas, e quanto a voc\xEA?"
+    - language: 1
+      text: But, what about you?
+    dialogue: "Mas, e quanto a voc\xEA?"
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "N\xE3o se preocupe Eduardo, enquanto voc\xEA for esse garoto alegre,
+        eu sempre estarei ao seu lado."
+    - language: 1
+      text: Don't worry Eduardo, as long as you stay as this happy boy, I shall always
+        stay by your side.
+    dialogue: "N\xE3o se preocupe Eduardo, enquanto voc\xEA for esse garoto alegre,
+      eu sempre estarei ao seu lado."
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Agora v\xE1..."
+    - language: 1
+      text: Now go...
+    dialogue: "Agora v\xE1..."
+    typeSpeed: 0
+  - characterName: Chico
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: E ACORDE!
+    - language: 1
+      text: AND WAKE UP!
+    dialogue: E ACORDE
+    typeSpeed: 0

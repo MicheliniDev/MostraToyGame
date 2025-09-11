@@ -16,9 +16,17 @@ namespace ToyGame.FSM
         public override void OnStateEnter()
         {
             base.OnStateEnter();
-            Destroy(enemy.gameObject);
+            StartCoroutine(Death());
         }
 
+        private IEnumerator Death()
+        {
+            if (bindingAnimation != null)
+                animationPlayer.PlayAnimation(bindingAnimation.name);
+            yield return new WaitForSeconds(0.3f);
+            enemy.effects.HandleDeathEffects();
+            Destroy(enemy.gameObject);
+        }
         public override void OnStateExit()
         {
             base.OnStateExit();

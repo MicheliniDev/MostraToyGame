@@ -13,7 +13,11 @@ namespace ToyGame.FSM
                 fsm.ChangeState(PlayerStateType.Normal);
 
             if (tag == PlayerAnimationEvents.PlayerAnimationEventTag.Cancel)
-                player.health.GainFull();        
+            {
+                player.health.GainFull();
+                player.CUrrentHealAmount -= 1;
+                player.UpdateHealToys();
+            }       
         }
 
         public override void OnStateEnter()
@@ -21,7 +25,9 @@ namespace ToyGame.FSM
             base.OnStateEnter();
             CanMove = false;
             canFlip = false;
-            animationPlayer.PlayAnimation("Heal");
+            canParry = false;
+            playerMover.Velocity = Vector2.zero;
+            animationPlayer.PlayAnimation("Heal", true);
         }
 
         public override void OnStateExit()

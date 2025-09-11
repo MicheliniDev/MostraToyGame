@@ -18,7 +18,8 @@ namespace ToyGame
         {
             if (isStunOnPerfectParry)
             {
-                enemy.fsm.ChangeState(stunState);
+                if (enemy.fsm.GetState(stunState))
+                    enemy.fsm.ChangeState(stunState);
             }
         }
     }

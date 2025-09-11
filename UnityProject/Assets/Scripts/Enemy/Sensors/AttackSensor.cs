@@ -38,7 +38,6 @@ namespace ToyGame
                 isFirstTimePlayerInside = false;
                 return true;
             }
-
             return time >= canAttackTimer;
         }
         

@@ -6,6 +6,7 @@ namespace ToyGame.FSM
     {
         public override PlayerStateType StateType => PlayerStateType.Normal;
 
+        private string clipToPlay;
         public override void OnStateEnter()
         {
             base.OnStateEnter();
@@ -13,8 +14,7 @@ namespace ToyGame.FSM
             canFlip = true; 
             canParry = true;
 
-            PlayerParryState state = fsm.StateCollection[PlayerStateType.Parry] as PlayerParryState;
-            state.ResetParryIndex();
+            fsm.ParryState?.ResetParryIndex();
         }
 
         public override void OnStateExit()
@@ -39,11 +39,18 @@ namespace ToyGame.FSM
 
         private void HandleAnimations()
         {
-            if (playerMover.isGrounded)
+            if (!playerMover.isGrounded)
             {
-                if (player.playerMover.MovementAxis != 0f) animationPlayer.PlayAnimation("Run");
-                else animationPlayer.PlayAnimation("Idle");
+                if (playerMover.Velocity.y > 0.1f) clipToPlay = "Jump";
+                else clipToPlay = "Fall";
             }
+            else
+            {
+                if (player.playerMover.MovementAxis != 0f) clipToPlay = "Run";
+                else clipToPlay = "Idle";
+            }
+
+            animationPlayer.PlayAnimation(clipToPlay);
         }
     }
 }

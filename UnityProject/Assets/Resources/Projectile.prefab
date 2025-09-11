@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 1719180638867005449}
   - component: {fileID: 958050932191842905}
   - component: {fileID: 8906346580251324820}
+  - component: {fileID: 3472398209326868115}
   m_Layer: 10
   m_Name: DamageDealer
   m_TagString: Untagged
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 117c68e34078ac94598baf15f3a5f996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageValue: 10
+  DamageValue: 20
   parryData: {fileID: 0}
   IsParried: 0
 --- !u!114 &8906346580251324820
@@ -264,3 +265,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isReturnToOwnerOnParry: 1
   projectile: {fileID: 0}
+--- !u!114 &3472398209326868115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3037768544024034994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1058cc99d0f2b26489d22d883aa5f490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerFacing: 0
+  KnockbackAmount: 10

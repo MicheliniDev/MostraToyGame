@@ -18,11 +18,11 @@ namespace ToyGame.FSM
         public override void OnStateEnter()
         {
             base.OnStateEnter();
-            animationPlayer.PlayAnimation("Hurt");
+            animationPlayer.PlayAnimation("Hurt", true);
             canParry = false;
             CanMove = false;
             canFlip = false;
-            TimeManager.instance.PauseTimeForDuration(10f / 60f);
+            TimeManager.instance.PauseTimeForDuration(20f / 60f);
         }
 
         public override void OnStateExit()

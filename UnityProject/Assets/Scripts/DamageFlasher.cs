@@ -10,7 +10,6 @@ namespace ToyGame
         [SerializeField] private AnimationCurve flashCurve;
         
         private Material[] materialsToFlash;
-        private Coroutine flashCoroutine;
         public void Awake()
         {
             materialsToFlash = new Material[spritesToFlash.Length];
@@ -23,7 +22,7 @@ namespace ToyGame
 
         public void Flash()
         {
-            flashCoroutine = StartCoroutine(FlashSprite());
+            StartCoroutine(FlashSprite());
         }
 
         private IEnumerator FlashSprite()

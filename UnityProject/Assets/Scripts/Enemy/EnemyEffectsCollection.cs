@@ -9,9 +9,7 @@ namespace ToyGame
         private Enemy enemy;
 
         [SerializeField] private ParticleSystem damageParticles;
-        [SerializeField] private GameObject damageSound;
         [SerializeField] private GameObject deathParticlesPrefab;
-        [SerializeField] private GameObject deathSound;
         
         private DamageFlasher spriteFlasher;
         void Awake()
@@ -45,13 +43,11 @@ namespace ToyGame
                 damageParticles.transform.rotation = rotation;
             }
             damageParticles.Emit(30);
-            damageSound.SetActive(true);
         }
 
-        private void HandleDeathEffects()
+        public void HandleDeathEffects()
         {
             Instantiate(deathParticlesPrefab, enemy.transform.position, Quaternion.identity);
-            deathSound.SetActive(true);
         }
 
         private void HandleParryEffects()

@@ -58,6 +58,7 @@ namespace ToyGame.FSM
             if (bindLinker == null)
             {
                 fsm.FallbackFromAttack();
+                return;
             }
             
             EnemyStateType? attack = bindLinker.LinkNextMove();

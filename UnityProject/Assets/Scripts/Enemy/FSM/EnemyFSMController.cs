@@ -9,7 +9,7 @@ namespace ToyGame.FSM
     {
         private Enemy enemy;
         [field: SerializeField] public EnemyState CurrentState { get; private set; }
-        public EnemyStateType CurrentStateType => CurrentState.StateType;
+        public EnemyStateType CurrentStateType => CurrentState?.StateType ?? EnemyStateType.Idle;
         public Dictionary<EnemyStateType, EnemyState> StateCollection = new();
 
         [SerializeField] private EnemyStateType startingState;
@@ -24,7 +24,8 @@ namespace ToyGame.FSM
             {
                 StateCollection.Add(state.StateType, state);
             }
-            ChangeState(startingState);
+            CurrentState = StateCollection[startingState];
+            CurrentState.OnStateEnter();
         }
 
         void Update()
@@ -95,8 +96,6 @@ namespace ToyGame.FSM
 
         public void ChangeState(EnemyStateType targetState)
         {
-            //if (CurrentState != null && CurrentStateType == targetState) return;
-
             CurrentState?.OnStateExit();
             CurrentState = StateCollection[targetState];
             CurrentState?.OnStateEnter();
@@ -108,13 +107,6 @@ namespace ToyGame.FSM
                 return null;
             }
             else return StateCollection[state];
-        }
-
-        private void OnGUI()
-        {
-            GUILayout.BeginArea(new Rect(800f, 10f, 400f, 200f));
-            GUILayout.Label($"<color='black'><size=40>{CurrentStateType}</size></color>");
-            GUILayout.EndArea();
         }
 
         public void AddToStateMachine(EnemyStateType stateType, EnemyState state)

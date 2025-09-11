@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051d7de69378fd4988a3e7e796b3bfa, type: 3}
+  m_Name: Oswald
+  m_EditorClassIdentifier: 
+  conversation:
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: Prazer garoto, eu me chamo Roger Oswald, sou o general da OCP.
+    - language: 1
+      text: Hello kid, I am Roger Oswald, OCP's General.
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: 'Prazer, me chamo Eduardo.
+
+'
+    - language: 1
+      text: Hello, I am Eduardo.
+    typeSpeed: 0
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Que bom encontr\xE1-lo Eduaro."
+    - language: 1
+      text: It's nice to meet you Eduardo.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Eu vi a forma como voc\xEA derrotou esses pesadelos, meus parab\xE9ns."
+    - language: 1
+      text: I saw the way you defeated those nightmares, well done.
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: Muito obrigado.
+    - language: 1
+      text: Thank you.
+    typeSpeed: 0
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Esses brinquedos que voc\xEA utiliza em combate s\xE3o realmente incriveis,
+        por\xE9m receio que voc\xEA n\xE3o possa continuar com eles."
+    - language: 1
+      text: These toys you use in combat are incredible, it saddens me to say that
+        you cannot have them anymore.
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: Por que?
+    - language: 1
+      text: Why?
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Eles s\xE3o aterfatos extremamente poderosos, \xE9 perigoso uma crian\xE7a
+        usar eles por ai."
+    - language: 1
+      text: They are powerful artifacts, it's dangerous for a child to just carry
+        them around.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: " N\xF3s da OCP presamos pela seguran\xE7a de todos."
+    - language: 1
+      text: The OCP values everyone's security.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Ent\xE3o teria como voc\xEA nos entregar?"
+    - language: 1
+      text: So, can you give them to me?
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "N\xC3O!! Ninguem ir\xE1 levar eles."
+    - language: 1
+      text: NO!! No one will take them from me.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Eduardo entenda, se voc\xEA n\xE3o souber us\xE1-los, estar\xE1 corrrendo
+        um grande perigo."
+    - language: 1
+      text: Eduardo please understand, if you do not know how to use them, you will
+        be causing great danger.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "Ent\xE3o por favor, nos entregue."
+    - language: 1
+      text: So please, give them to me.
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "N\xC3O!!"
+    - language: 1
+      text: NO!!
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: "Eles s\xE3o a \xFAltima coisa que eu recebi do meu pai..."
+    - language: 1
+      text: They are the last gift I received from my father...
+    typeSpeed: 0.2
+  - characterName: Eduardo
+    position: -1
+    localizedDialogue:
+    - language: 0
+      text: SE QUER TANTO ELES, VENHA PEGAR.
+    - language: 1
+      text: IF YOU WANT IT, THEN YOU'LL HAVE TO TAKE IT.
+    typeSpeed: 0.2
+  - characterName: Oswald
+    position: 1
+    localizedDialogue:
+    - language: 0
+      text: "... Pretendo n\xE3o o machucar."
+    - language: 1
+      text: ... I don't intend on harming you.
+    typeSpeed: 0.2

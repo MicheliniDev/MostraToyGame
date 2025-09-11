@@ -9,8 +9,7 @@ namespace ToyGame
         public void Interact()
         {
             Player.instance.SetCheckPoint(transform);
-            Player.instance.health.GainFull();
-            SceneManager.LoadSceneAsync(Player.instance.Checkpoint.scene.name);
+            Player.instance.ResetLevel();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)

@@ -1,9 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.Collections;
-using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 namespace ToyGame
 {
@@ -16,9 +15,14 @@ namespace ToyGame
 
         public GameObject PlayerWrapper;
         public GameObject UICanvas;
+        public GameObject SettingsPanel;
         public Player player;
 
+        public LanguageType CurrentLanguage = LanguageType.PT_BR;
+        public UnityEvent OnCurrentLanguageChanged;
+
         public bool isPaused;
+        public bool isEasyMode;
         private void Awake()
         {
             if (instance != null && instance != this)
@@ -29,14 +33,18 @@ namespace ToyGame
             DontDestroyOnLoad(gameObject);
         }
 
-        public void EnablePlayerView() => player.PlayerSprite.SetActive(true);
-        public void DisablePlayerView() => player.PlayerSprite.SetActive(false);
-
         public void StartGame()
         {
-            EnablePlayerView();
             UICanvas.SetActive(true);
             PlayerWrapper.SetActive(true);
+            Vector3 playerStartPos = new Vector3(-5.86f, 1, 0.01120768f);
+            player.transform.position = playerStartPos;
+            player.Checkpoint = new PlayerCheckpoint() {
+                scene = SceneManager.GetActiveScene(),
+                position = playerStartPos
+            };
+            InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
+            player.transform.position = new Vector3(-5.86f, 1f, 0.01120768f);
         }
 
         public void QuitGame()
@@ -46,8 +54,13 @@ namespace ToyGame
 
         private IEnumerator Quit()
         {
+            Time.timeScale = 1f;
             yield return StartCoroutine(FadeInLoadingScreen());
-
+            
+            player.health.GainFull();
+            player.CUrrentHealAmount = player.MaxHealAmount;
+            player.UpdateHealToys();
+            
             PlayerWrapper.SetActive(false);
 
             AsyncOperation quitOperation = SceneManager.LoadSceneAsync("Menu");
@@ -59,7 +72,35 @@ namespace ToyGame
                 }
                 yield return null;
             }
+            Resume();
+            yield return StartCoroutine(FadeOutLoadingScreen());
+
+            InputManager.instance.SwitchCurrentActionMap(InputMap.UI);
+        }
+
+        public void Pause()
+        {
+            TimeManager.instance.PauseTime();
+            isPaused = true;
+            FadeInPauseMenu();
+            SoundManager.instance.MuffleBGM(.5f);
+            InputManager.instance.SwitchCurrentActionMap(InputMap.UI);
+        }
+
+        public void Resume()
+        {
+            TimeManager.instance.ResumeTime();
+            isPaused = false;
+            FadeOutPauseMenu();
+            SoundManager.instance.UnmuffleBGM(.5f);
+            SettingsPanel.SetActive(false);
+            StartCoroutine(WaitForFrame());
+        }
+
+        IEnumerator WaitForFrame()
+        {
             yield return null;
+            InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
         }
 
         public void LoadLevel(SceneConnection levelConnection)
@@ -82,7 +123,7 @@ namespace ToyGame
                 yield return null;
             }
 
-            transform.position = connection.playerSpawnPoint;
+            player.transform.position = connection.playerSpawnPoint;
             yield return StartCoroutine(FadeOutLoadingScreen());
 
             player.health.RemoveInvincible();

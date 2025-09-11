@@ -57,7 +57,7 @@ namespace ToyGame.FSM
                 animationClip = "CounterAttack";
                 attackCount = 0;
             }
-            animationPlayer.PlayAnimation(animationClip);
+            animationPlayer.PlayAnimation(animationClip, true);
         }
 
         public override void OnStateExit()

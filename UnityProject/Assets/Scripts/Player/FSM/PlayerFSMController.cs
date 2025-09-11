@@ -11,6 +11,7 @@ namespace ToyGame.FSM
         public PlayerStateType CurrentStateType => CurrentState?.StateType ?? PlayerStateType.Normal;
 
         private PlayerAttackState attackState;
+        public  PlayerParryState ParryState;
         private Player player;
         
         public float attackTimer;
@@ -26,6 +27,7 @@ namespace ToyGame.FSM
             CurrentState?.OnStateEnter();
             
             attackState = (PlayerAttackState)StateCollection[PlayerStateType.Attack];
+            ParryState = (PlayerParryState)StateCollection[PlayerStateType.Parry];
         }
 
         void Update()
@@ -58,15 +60,11 @@ namespace ToyGame.FSM
         public void CounterAttackStateChecks()
         {
             if (!StateCollection.ContainsKey(PlayerStateType.Attack)) return;
-
-            if (InputManager.instance.GetActionDown("CounterAttack"))
-            {
-                PlayerParryState parryState = (PlayerParryState)StateCollection[PlayerStateType.Parry];
-                if (parryState.wasPerfectParried)
-                {
-                    attackState.isCounterAttack = true;
-                    ChangeState(PlayerStateType.Attack);
-                }
+           
+            if (InputManager.instance.GetActionDown("CounterAttack") && ParryState.wasPerfectParried)
+            {   
+                attackState.isCounterAttack = true;
+                ChangeState(PlayerStateType.Attack);
             }
         }
 
@@ -79,8 +77,8 @@ namespace ToyGame.FSM
 
         public void HealStateChecks()
         {
-            if (!StateCollection.ContainsKey(PlayerStateType.Heal)) return;
-            if (InputManager.instance.GetAction("Heal"))
+            if (!StateCollection.ContainsKey(PlayerStateType.Heal) || !player.playerMover.isGrounded) return;
+            if (InputManager.instance.GetActionDown("Heal") && player.CUrrentHealAmount > 0)
             {
                 ChangeState(PlayerStateType.Heal);
             }

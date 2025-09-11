@@ -11,6 +11,7 @@ namespace ToyGame.FSM
         private float[] perfectParryWindows = new float[]
         {
             9 / 60f,
+            9 / 60f,
             4 / 60f,
             0f,
             0f,
@@ -31,15 +32,17 @@ namespace ToyGame.FSM
         {
             base.OnStateEnter();
             if (playerMover.isGrounded)
+            {
                 CanMove = false;
+                playerMover.Velocity = Vector2.zero;
+            }
             else
                 CanMove = true;
 
-            canFlip = false;
             wasPerfectParried = false;
-            playerMover.Velocity = Vector2.zero;
 
-            animationPlayer.PlayAnimation("TryDefend", true, 0f);
+            canFlip = false;
+            animationPlayer.PlayAnimation("TryDefend", true);
 
             parryIndex++;
             if (parryIndex > perfectParryWindows.Length - 1)
@@ -101,11 +104,14 @@ namespace ToyGame.FSM
             OnPerfectParry?.Invoke();
             animationPlayer.PlayAnimation("Parry", true);
             TimeManager.instance.PauseTimeForDuration(10f / 60f);
+            ResetParryIndex();
         }
 
         public void ImperfectParry()
         {
+            wasPerfectParried = false;
             receiver.LoseHealthByAmount(receiver.currentDealer.DamageValue / 2f);
+            TimeManager.instance.PauseTimeForDuration(20f / 60f);
             receiver.currentDealer = null;
             animationPlayer.PlayAnimation("ImperfectParry", true);
             OnImperfectParry?.Invoke();

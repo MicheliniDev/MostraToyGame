@@ -26,6 +26,7 @@ namespace ToyGame
         public void GainFull()
         {
             CurrentHealth = MaxHealth;
+            OnHealthChanged?.Invoke();
         }
 
         public virtual void LoseHealthByDealer(DamageDealer dealer)
