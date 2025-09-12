@@ -16,6 +16,7 @@ namespace ToyGame.FSM
         [SerializeField] private List<Enemy> enemiesToForceEngage; 
 
         public UnityEvent OnEnemyEngage;
+        private bool isLocked;
         void Start()
         {
             enemy = GetComponentInParent<Enemy>();  
@@ -96,6 +97,8 @@ namespace ToyGame.FSM
 
         public void ChangeState(EnemyStateType targetState)
         {
+            if (isLocked) return;
+
             CurrentState?.OnStateExit();
             CurrentState = StateCollection[targetState];
             CurrentState?.OnStateEnter();
@@ -113,5 +116,9 @@ namespace ToyGame.FSM
         {
             StateCollection.Add(stateType, state);
         }
+
+        public void Remove(EnemyStateType type) => StateCollection.Remove(type);
+
+        public void LockFSM(bool lockValue) => isLocked = lockValue;
     }
 }

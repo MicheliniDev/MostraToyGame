@@ -22,6 +22,11 @@ namespace ToyGame
         }
         private void OnEnable() => owner.OnHealthChanged += UpdateHealthBar;
         private void OnDisable() => owner.OnHealthChanged -= UpdateHealthBar;
-        private void UpdateHealthBar() => healthBar.value = owner.CurrentHealth;
+        
+        private void UpdateHealthBar()
+        {
+            healthBar.maxValue = owner.MaxHealth;
+            healthBar.value = owner.CurrentHealth;
+        }
     }
 }

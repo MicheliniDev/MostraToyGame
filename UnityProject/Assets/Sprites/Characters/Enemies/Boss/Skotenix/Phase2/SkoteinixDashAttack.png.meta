@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: 30f2d19c28c7b6d4faea559783d4e7c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4409590444050139575
+    second: SkoteinixDashAttack_0
+  - first:
+      213: 6393206208010246015
+    second: SkoteinixDashAttack_1
+  - first:
+      213: 5181968471871378543
+    second: SkoteinixDashAttack_2
+  - first:
+      213: -4000553778302112462
+    second: SkoteinixDashAttack_3
+  - first:
+      213: -292993665615500938
+    second: SkoteinixDashAttack_4
+  - first:
+      213: -2219849248202585840
+    second: SkoteinixDashAttack_5
+  - first:
+      213: 7606438175481357931
+    second: SkoteinixDashAttack_6
+  - first:
+      213: 8561561700092900881
+    second: SkoteinixDashAttack_7
+  - first:
+      213: -7085032482927045440
+    second: SkoteinixDashAttack_8
+  - first:
+      213: -4375355064931700743
+    second: SkoteinixDashAttack_9
+  - first:
+      213: -5093600709522269854
+    second: SkoteinixDashAttack_10
+  - first:
+      213: 350502807342169480
+    second: SkoteinixDashAttack_11
+  - first:
+      213: 6821538243467896236
+    second: SkoteinixDashAttack_12
+  - first:
+      213: -1758604324149023683
+    second: SkoteinixDashAttack_13
+  - first:
+      213: 5423988168228837601
+    second: SkoteinixDashAttack_14
+  - first:
+      213: 385598055109347113
+    second: SkoteinixDashAttack_15
+  - first:
+      213: -3923769437478410247
+    second: SkoteinixDashAttack_16
+  - first:
+      213: 7837180553664842705
+    second: SkoteinixDashAttack_17
+  - first:
+      213: 8334869919004556609
+    second: SkoteinixDashAttack_18
+  - first:
+      213: -98041935618724600
+    second: SkoteinixDashAttack_19
+  - first:
+      213: 479730053393219778
+    second: SkoteinixDashAttack_20
+  - first:
+      213: -2021659475657642900
+    second: SkoteinixDashAttack_21
+  - first:
+      213: 1113657262096697207
+    second: SkoteinixDashAttack_22
+  - first:
+      213: -8593133726759886771
+    second: SkoteinixDashAttack_23
+  - first:
+      213: 2282191814193956672
+    second: SkoteinixDashAttack_24
+  - first:
+      213: -5626225757483259323
+    second: SkoteinixDashAttack_25
+  - first:
+      213: -4849815613806554891
+    second: SkoteinixDashAttack_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9463f69aadcfdc2c0800000000000000
+      internalID: -4409590444050139575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77d54c6c2b39b850800000000000000
+      internalID: 6393206208010246015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64da23bedc0ae740800000000000000
+      internalID: 5181968471871378543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23da473d88d2b78c0800000000000000
+      internalID: -4000553778302112462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6796c8f30d31febf0800000000000000
+      internalID: -292993665615500938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01987f9bed28131e0800000000000000
+      internalID: -2219849248202585840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66698f483f7f8960800000000000000
+      internalID: 7606438175481357931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11670a05107c0d670800000000000000
+      internalID: 8561561700092900881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkoteinixDashAttack_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c49701be78ecad90800000000000000
+      internalID: -7085032482927045440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a6238f9c6f47e8243bd7fc964bb96602
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkoteinixDashAttack_0: -4409590444050139575
+      SkoteinixDashAttack_1: 6393206208010246015
+      SkoteinixDashAttack_2: 5181968471871378543
+      SkoteinixDashAttack_3: -4000553778302112462
+      SkoteinixDashAttack_4: -292993665615500938
+      SkoteinixDashAttack_5: -2219849248202585840
+      SkoteinixDashAttack_6: 7606438175481357931
+      SkoteinixDashAttack_7: 8561561700092900881
+      SkoteinixDashAttack_8: -7085032482927045440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

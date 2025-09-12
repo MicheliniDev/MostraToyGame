@@ -15,6 +15,7 @@ namespace ToyGame
         public enum AnimationEvents { 
             Done,
             StopFlipCheck,
+            UnLock
         }
     }
 }

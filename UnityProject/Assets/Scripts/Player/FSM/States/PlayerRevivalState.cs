@@ -39,11 +39,10 @@ namespace ToyGame.FSM
             GameManager.instance.FadeLoadingScreen();
             yield return new WaitForSeconds(.5f);
 
-            player.health.GainFull();
             player.health.BecomeInvincible();
 
             Debug.Log(player.Checkpoint.scene.name);
-
+            Debug.Log(isDeathBySkoteinix0);
             if (!isDeathBySkoteinix0)
             {
                 if (player.Checkpoint.scene.name == null)
@@ -60,6 +59,7 @@ namespace ToyGame.FSM
                     }
                     yield return null;
                 }
+                Debug.Log(player.Checkpoint.position);
                 player.transform.position = player.Checkpoint.position;
             }
             else
@@ -76,7 +76,9 @@ namespace ToyGame.FSM
                 player.transform.position = Vector2.zero;
             }
             player.health.RemoveInvincible();
+            player.health.GainFull();
             player.CUrrentHealAmount = player.MaxHealAmount;
+            player.UpdateHealToys();
             fsm.ChangeState(PlayerStateType.Normal);
             yield return new WaitForSeconds(.2f);
 

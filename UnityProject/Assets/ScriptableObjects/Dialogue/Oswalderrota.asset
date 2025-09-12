@@ -20,8 +20,7 @@ MonoBehaviour:
       text: "N\xE3o esperava tanta for\xE7a de um garoto t\xE3o jovem."
     - language: 1
       text: I didn't expect such strength coming from a young boy.
-    dialogue: "N\xE3o esperava tanta for\xE7a de um garoto t\xE3o jovem."
-    typeSpeed: 0.35
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -29,8 +28,7 @@ MonoBehaviour:
       text: "Voc\xEA ganhou meu respeito Eduardo."
     - language: 1
       text: You won my respect Eduardo.
-    dialogue: "Voc\xEA ganhou meu respeito Eduardo."
-    typeSpeed: 0.3
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -38,8 +36,7 @@ MonoBehaviour:
       text: "Muito obrigado, o senhor tamb\xE9m \xE9 bastante poderoso."
     - language: 1
       text: Thank you, you are quite powerful yourself.
-    dialogue: "Muito obrigado, o senhor tamb\xE9m \xE9 bastante poderoso."
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -47,8 +44,7 @@ MonoBehaviour:
       text: Hahaha! Obrigado.
     - language: 1
       text: Thank you.
-    dialogue: Hahaha! Obrigado
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -58,9 +54,7 @@ MonoBehaviour:
     - language: 1
       text: Eduardo, you should join the OCP, and defeat the other nightmares that
         were able to invade it.
-    dialogue: "Eduardo, quero que voc\xEA adentre a OCP, e derrote os outros pesadelos
-      que l\xE1 invadiram."
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -68,8 +62,7 @@ MonoBehaviour:
       text: "Enquanto isso eu cuidarei da reta guarda para voc\xEA."
     - language: 1
       text: As for me, I shall take care of the sidelines.
-    dialogue: "Enquanto isso eu cuidarei da reta guarda para voc\xEA."
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -77,8 +70,7 @@ MonoBehaviour:
       text: "Agora v\xE1 garoto, e brilhe como a estrela que voc\xEA \xE9."
     - language: 1
       text: Now go kid, and shine like the star you really are.
-    dialogue: "Agora v\xE1 garoto, e brilhe como a estrela que voc\xEA \xE9."
-    typeSpeed: 0.3
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -86,5 +78,4 @@ MonoBehaviour:
       text: Ok senhor.
     - language: 1
       text: Ok sir.
-    dialogue: Ok senhor.
-    typeSpeed: 0.3
+    typeSpeed: 0

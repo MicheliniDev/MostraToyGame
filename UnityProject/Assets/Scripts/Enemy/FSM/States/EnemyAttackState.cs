@@ -17,6 +17,7 @@ namespace ToyGame.FSM
         public AttackMoveType moveType;
         private float radiansToPlayer;
         private Vector2 distanceToPlayer;
+
         public override void OnStateEnter()
         {
             base.OnStateEnter();

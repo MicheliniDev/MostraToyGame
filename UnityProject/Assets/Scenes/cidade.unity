@@ -3221,6 +3221,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   attackRotation: {x: 0, y: 0, z: 0, w: 0}
+  isInvincible: 0
 --- !u!114 &400828904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23299,6 +23300,7 @@ GameObject:
   - component: {fileID: 729467057}
   - component: {fileID: 729467059}
   - component: {fileID: 729467058}
+  - component: {fileID: 729467060}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -23322,7 +23324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -465.06, y: -537.53}
+  m_AnchoredPosition: {x: -471.96, y: -538.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729467058
@@ -23355,8 +23357,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278251263
+  m_fontColor: {r: 1, g: 0.93333334, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -23385,7 +23387,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 80
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -23411,7 +23413,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1318.0573, w: 0}
+  m_margin: {x: 0, y: 0, z: -253.76039, w: -24.114475}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -23425,6 +23427,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729467056}
   m_CullTransparentMesh: 1
+--- !u!114 &729467060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729467056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4153799ec0279df4ea278c9bf87c8ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizations:
+  - language: 0
+    text: "Aperte o bot\xE3o de contra-ataque logo ap\xF3s defender perfeitamente
+      um ataque inimigo.\n"
+  - language: 1
+    text: Press Counter-Attack right after succesfully defending an enemy attack.
 --- !u!1 &731032923
 GameObject:
   m_ObjectHideFlags: 0
@@ -23505,7 +23525,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &731032927
 RectTransform:

@@ -15,9 +15,10 @@ namespace ToyGame
 
         [SerializeField] private bool isInvincible;
         public bool IsInvincible => isInvincible;
-        void Awake()
+        public override void Start()
         {
-            MaxHealth = GameManager.instance.isEasyMode ? maxHealth * 10 : maxHealth;
+            MaxHealth = GameManager.instance.isEasyMode ? maxHealth * 15 : maxHealth;
+            SetHealth(MaxHealth);
         }
 
         public override void LoseHealthByDealer(DamageDealer dealer)
@@ -65,13 +66,11 @@ namespace ToyGame
         public void BecomeInvincible() => isInvincible = true;
         public void RemoveInvincible() => isInvincible = false;
         private void ClearDealer() => currentDealer = null;
-        public void LoseHealthByAmount(float amount)
+
+        public override void LoseHealthByAmount(float amount)
         {
             if (isInvincible) return;
-
-            CurrentHealth -= amount;
-            if (DeathCheck())
-                HandleDeath();
+            base.LoseHealthByAmount(amount);
         }
 
         public override void HandleDeath()

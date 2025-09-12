@@ -11,7 +11,7 @@ namespace ToyGame
 
         public event Action OnHealthChanged;
         public event Action<DamageDealer> OnHealthChangedData;
-        void Start()
+        public virtual void Start()
         {
             SetHealth(MaxHealth);
         }
@@ -37,6 +37,14 @@ namespace ToyGame
             OnHealthChangedData?.Invoke(dealer);
         }
 
+        public virtual void LoseHealthByAmount(float amount)
+        {
+            CurrentHealth -= amount;
+            OnHealthChanged?.Invoke();
+
+            if (DeathCheck())
+                HandleDeath();
+        }
         public void HealHealth(float amount)
         {
             CurrentHealth += amount;

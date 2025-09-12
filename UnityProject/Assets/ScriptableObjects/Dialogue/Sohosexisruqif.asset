@@ -20,7 +20,7 @@ MonoBehaviour:
       text: Onde estou?
     - language: 1
       text: Where am I?
-    typeSpeed: 0.15
+    typeSpeed: 0
   - characterName: ???
     position: 1
     localizedDialogue:
@@ -28,4 +28,4 @@ MonoBehaviour:
       text: Eduardo, me encontre.
     - language: 1
       text: Eduardo, find me.
-    typeSpeed: 0.4
+    typeSpeed: 0

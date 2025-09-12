@@ -28232,7 +28232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6092898968441853564, guid: e3c60da071b64d04daf3a00918e77d1c, type: 3}
       propertyPath: DamageValue
-      value: 60
+      value: 100000000
       objectReference: {fileID: 0}
     - target: {fileID: 6120197472882828758, guid: e3c60da071b64d04daf3a00918e77d1c, type: 3}
       propertyPath: m_AnchorMax.x

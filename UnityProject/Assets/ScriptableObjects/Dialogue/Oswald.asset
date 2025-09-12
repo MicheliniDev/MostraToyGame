@@ -20,7 +20,7 @@ MonoBehaviour:
       text: Prazer garoto, eu me chamo Roger Oswald, sou o general da OCP.
     - language: 1
       text: Hello kid, I am Roger Oswald, OCP's General.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -38,7 +38,7 @@ MonoBehaviour:
       text: "Que bom encontr\xE1-lo Eduaro."
     - language: 1
       text: It's nice to meet you Eduardo.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -46,7 +46,7 @@ MonoBehaviour:
       text: "Eu vi a forma como voc\xEA derrotou esses pesadelos, meus parab\xE9ns."
     - language: 1
       text: I saw the way you defeated those nightmares, well done.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -64,7 +64,7 @@ MonoBehaviour:
     - language: 1
       text: These toys you use in combat are incredible, it saddens me to say that
         you cannot have them anymore.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: 1
     localizedDialogue:
@@ -72,7 +72,7 @@ MonoBehaviour:
       text: Por que?
     - language: 1
       text: Why?
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -82,7 +82,7 @@ MonoBehaviour:
     - language: 1
       text: They are powerful artifacts, it's dangerous for a child to just carry
         them around.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -90,7 +90,7 @@ MonoBehaviour:
       text: " N\xF3s da OCP presamos pela seguran\xE7a de todos."
     - language: 1
       text: The OCP values everyone's security.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -116,7 +116,7 @@ MonoBehaviour:
     - language: 1
       text: Eduardo please understand, if you do not know how to use them, you will
         be causing great danger.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -124,7 +124,7 @@ MonoBehaviour:
       text: "Ent\xE3o por favor, nos entregue."
     - language: 1
       text: So please, give them to me.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -132,7 +132,7 @@ MonoBehaviour:
       text: "N\xC3O!!"
     - language: 1
       text: NO!!
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -140,7 +140,7 @@ MonoBehaviour:
       text: "Eles s\xE3o a \xFAltima coisa que eu recebi do meu pai..."
     - language: 1
       text: They are the last gift I received from my father...
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -148,7 +148,7 @@ MonoBehaviour:
       text: SE QUER TANTO ELES, VENHA PEGAR.
     - language: 1
       text: IF YOU WANT IT, THEN YOU'LL HAVE TO TAKE IT.
-    typeSpeed: 0.2
+    typeSpeed: 0
   - characterName: Oswald
     position: 1
     localizedDialogue:
@@ -156,4 +156,4 @@ MonoBehaviour:
       text: "... Pretendo n\xE3o o machucar."
     - language: 1
       text: ... I don't intend on harming you.
-    typeSpeed: 0.2
+    typeSpeed: 0

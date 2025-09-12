@@ -20,8 +20,7 @@ MonoBehaviour:
       text: "Voc\xEA n\xE3o me vencer\xE1 Eduardo"
     - language: 1
       text: You cannot win agaisnt me, Eduardo!
-    dialogue: "Voc\xEA n\xE3o me vencer\xE1! Eduardo"
-    typeSpeed: 0.15
+    typeSpeed: 0
   - characterName: Eduardo
     position: -1
     localizedDialogue:
@@ -29,5 +28,4 @@ MonoBehaviour:
       text: Nah, eu venceria.
     - language: 1
       text: Nah, I'd win
-    dialogue: Nah, eu venceria.
-    typeSpeed: 0.3
+    typeSpeed: 0

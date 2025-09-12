@@ -7,7 +7,7 @@ namespace ToyGame
     [RequireComponent(typeof(BoxCollider2D))]
     public class AttackSensor : MonoBehaviour
     {
-        [SerializeField] private List<EnemyStateType> starterMoves = new();
+        public List<EnemyStateType> starterMoves = new();
         [SerializeField] private float canAttackTimer;
 
         [HideInInspector] public bool isFirstTimePlayerInside = false;

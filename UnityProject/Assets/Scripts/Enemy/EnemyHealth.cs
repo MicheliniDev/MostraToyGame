@@ -15,8 +15,15 @@ namespace ToyGame
         public UnityEvent OnEnemyDeath;
 
         public Quaternion attackRotation;
+
+        public bool isInvincible;
         public override void LoseHealthByDealer(DamageDealer dealer)
         {
+            if (isInvincible)
+            {
+                return;
+            }
+
             base.LoseHealthByDealer(dealer);
             if (dealer is EnemyDamageDealer)
             {
@@ -36,7 +43,10 @@ namespace ToyGame
             base.HandleDeath();
             FetchDeathState(out var deathState);
             enemy.fsm.ChangeState(deathState);
-            OnEnemyDeath?.Invoke();
+            if (deathState == EnemyStateType.Dead)
+            {
+                OnEnemyDeath?.Invoke();
+            }
         }
 
         public void FetchDeathState(out EnemyStateType deathState)

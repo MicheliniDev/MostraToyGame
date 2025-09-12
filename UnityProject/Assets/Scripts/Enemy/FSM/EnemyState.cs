@@ -30,5 +30,10 @@ namespace ToyGame.FSM
         {
             if (tag == EnemyAnimationEvents.AnimationEvents.StopFlipCheck) canFlip = false;
         }
+
+        private void OnDisable()
+        {
+            fsm.Remove(StateType);
+        }
     }
 }
