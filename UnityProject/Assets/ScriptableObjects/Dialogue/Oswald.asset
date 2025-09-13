@@ -35,7 +35,7 @@ MonoBehaviour:
     position: 1
     localizedDialogue:
     - language: 0
-      text: "Que bom encontr\xE1-lo Eduaro."
+      text: "Que bom encontr\xE1-lo Eduardo."
     - language: 1
       text: It's nice to meet you Eduardo.
     typeSpeed: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
         you cannot have them anymore.
     typeSpeed: 0
   - characterName: Eduardo
-    position: 1
+    position: -1
     localizedDialogue:
     - language: 0
       text: Por que?
