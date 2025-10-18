@@ -123,6 +123,7 @@ namespace ToyGame
 
         public void EndDialogue()
         {
+            StopAllCoroutines();
             currentConversation = null;
             DialogueText.text = "";
             DialogueWrapper.SetActive(false);

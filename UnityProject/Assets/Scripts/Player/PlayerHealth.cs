@@ -15,7 +15,13 @@ namespace ToyGame
 
         [SerializeField] private bool isInvincible;
         public bool IsInvincible => isInvincible;
+
         public override void Start()
+        {
+            return;
+        }
+        
+        public void OnEnable()
         {
             MaxHealth = GameManager.instance.isEasyMode ? maxHealth * 15 : maxHealth;
             SetHealth(MaxHealth);
@@ -36,7 +42,7 @@ namespace ToyGame
             }
         }
 
-        public IEnumerator DealDamageIfNotParried(EnemyDamageDealer dealer)
+        private IEnumerator DealDamageIfNotParried(EnemyDamageDealer dealer)
         {
             float timeDelay = 0f;
             while (timeDelay < 0.23f)
@@ -49,9 +55,6 @@ namespace ToyGame
                 yield return null;
             }
             base.LoseHealthByDealer(dealer);
-
-            if (dealer == null)
-                yield break;
 
             if (dealer.parryData is ParryDataProjectile)
             {

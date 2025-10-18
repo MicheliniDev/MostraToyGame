@@ -22,14 +22,12 @@ namespace ToyGame
         {
             enemy.health.OnEnemyDamaged.AddListener(HandleDamageEffects);
             enemy.health.OnEnemyDeath.AddListener(HandleDeathEffects);
-            PlayerParryState.OnParry += HandleParryEffects;
         }
 
         public void OnDestroy()
         {
             enemy.health.OnEnemyDamaged.RemoveListener(HandleDamageEffects);
             enemy.health.OnEnemyDeath.RemoveListener(HandleDeathEffects);
-            PlayerParryState.OnParry -= HandleParryEffects;
         }
 
         private void HandleDamageEffects()
@@ -48,11 +46,6 @@ namespace ToyGame
         public void HandleDeathEffects()
         {
             Instantiate(deathParticlesPrefab, enemy.transform.position, Quaternion.identity);
-        }
-
-        private void HandleParryEffects()
-        {
-            spriteFlasher.Flash();
         }
     }
 }
