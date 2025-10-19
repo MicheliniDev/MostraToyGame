@@ -134,6 +134,6 @@ namespace ToyGame
             OnDialogueEnd?.Invoke();
         }
 
-        public string GetTranslatedDialogue() => currentConversation.conversation[currentDialogueIndex].GetTranslatedText(GameManager.instance.CurrentLanguage);
+        public string GetTranslatedDialogue() => currentConversation.conversation[currentDialogueIndex].GetTranslatedText(GameManager.instance.CurrentLanguageType);
     }
 }

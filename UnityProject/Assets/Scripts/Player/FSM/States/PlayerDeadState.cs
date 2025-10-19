@@ -19,6 +19,7 @@ namespace ToyGame.FSM
         {
             base.OnStateEnter();
             CanMove = false;
+            Player.instance.playerMover.CanJump = false;
             canFlip = false;
             playerMover.Velocity = Vector2.zero;
             animationPlayer.PlayAnimation("Death");

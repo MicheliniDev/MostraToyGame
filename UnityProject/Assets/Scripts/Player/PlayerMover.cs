@@ -13,27 +13,23 @@ namespace ToyGame.Physics
         public float AirAccelerationSpeed = 50f;
         public float AirDecelerationSpeed = 50f;
 
-        [Space]
-        [Header("Jump")]
+        [Space] 
+        [Header("Jump")] 
+        public bool CanJump = true;
         public float jumpShortSpeed = 3f;   
         public float jumpSpeed = 6f;          
         private bool isJumping = false;
         private bool isJumpCanceling = false;
-        [SerializeField, Range(0f, 0.5f)] private float coyoteTime = .125f;
+        [SerializeField, Range(0f, 0.5f)] 
+        private float coyoteTime = .125f;
         private float coyoteTimer = 0f;
         
         public float MovementAxis;
 
         public Vector2 Velocity
         {
-            get
-            {
-                return rb.linearVelocity;
-            }
-            set
-            {
-                rb.linearVelocity = value;
-            }
+            get => rb.linearVelocity;
+            set => rb.linearVelocity = value;
         }
 
         private IFacingFlippable flippable;
@@ -48,22 +44,22 @@ namespace ToyGame.Physics
         private void Update()
         {
             MovementAxis = InputManager.instance.GetAxis("Move");
-
+            isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, 1 << LayerMask.NameToLayer("Ground"));
+            
             if (InputManager.instance.GetActionDown("Jump") && (isGrounded || coyoteTimer <= coyoteTime))
             {
                 isJumping = true;
+                coyoteTimer = 999f;
             }
             if (InputManager.instance.GetActionUp("Jump") && !isGrounded)
             {
                 isJumpCanceling = true;
             }
 
-            if (isGrounded && !isJumping)
-                coyoteTimer = 0f;
-            else if (isJumping)
-                coyoteTimer = 999f;
-            else
+            if (!isGrounded && !isJumping)
                 coyoteTimer += Time.deltaTime;
+            else if (isGrounded)
+                coyoteTimer = 0f;
         }
 
         private void FixedUpdate()
@@ -74,6 +70,7 @@ namespace ToyGame.Physics
 
         private void UpdateJump()
         {
+            if (!CanJump) return;
             if (isJumping)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
@@ -88,7 +85,7 @@ namespace ToyGame.Physics
             }
         }
 
-        public void UpdateMovement()
+        private void UpdateMovement()
         {
             float velocity = rb.linearVelocityX;
             float targetSpeed = MovementAxis * RunSpeed;

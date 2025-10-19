@@ -9,40 +9,17 @@ namespace ToyGame.FSM
         public override PlayerStateType StateType => PlayerStateType.Revival;
 
         public bool isDeathBySkoteinix0;
-        public override void OnAnimationEvent(PlayerAnimationEvents.PlayerAnimationEventTag tag)
-        {
-            base.OnAnimationEvent(tag);
-        }
-
         public override void OnStateEnter()
         {
             StartCoroutine(Revive());
         }
-
-        public override void OnStateExit()
-        {
-            base.OnStateExit();
-        }
-
-        public override void OnStateFixedUpdate()
-        {
-            base.OnStateFixedUpdate();
-        }
-
-        public override void OnStateUpdate()
-        {
-            base.OnStateUpdate();
-        }
-
+        
         private IEnumerator Revive()
         {
             GameManager.instance.FadeLoadingScreen();
             yield return new WaitForSeconds(.5f);
 
             player.health.BecomeInvincible();
-
-            Debug.Log(player.Checkpoint.scene.name);
-            Debug.Log(isDeathBySkoteinix0);
             if (!isDeathBySkoteinix0)
             {
                 if (player.Checkpoint.scene.name == null)
@@ -59,7 +36,6 @@ namespace ToyGame.FSM
                     }
                     yield return null;
                 }
-                Debug.Log(player.Checkpoint.position);
                 player.transform.position = player.Checkpoint.position;
             }
             else
@@ -75,15 +51,16 @@ namespace ToyGame.FSM
                 }
                 player.transform.position = Vector2.zero;
             }
-            player.health.RemoveInvincible();
             player.health.GainFull();
+            player.health.RemoveInvincible();
             player.CUrrentHealAmount = player.MaxHealAmount;
             player.UpdateHealToys();
             fsm.ChangeState(PlayerStateType.Normal);
-            yield return new WaitForSeconds(.2f);
-
             GameManager.instance.FadeLoadingScreenOut();
+            yield return new WaitForSeconds(.3f);
+
             isDeathBySkoteinix0 = false;
+            Player.instance.playerMover.CanJump = true;
             yield return null;
         }
     }

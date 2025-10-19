@@ -7,8 +7,9 @@ namespace ToyGame
         [HideInInspector] public ParryDataBase parryData;
         public bool IsParried;
         
-        public void OnEnable()
+        protected override void OnEnable()
         {
+            base.OnEnable();
             IsParried = false;
             parryData = GetComponent<ParryDataBase>();
         }

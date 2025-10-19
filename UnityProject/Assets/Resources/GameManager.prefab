@@ -1015,6 +1015,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1036,6 +1038,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 519467019
   m_SortingLayer: 4
   m_SortingOrder: 0
@@ -1801,12 +1804,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundCheckDistance: 1.5
+  isGrounded: 0
   canMove: 1
   RunSpeed: 8
   GroundAccelerationSpeed: 50
   GroundDecelerationSpeed: 100
   AirAccelerationSpeed: 50
   AirDecelerationSpeed: 50
+  CanJump: 1
   jumpShortSpeed: 10
   jumpSpeed: 18
   coyoteTime: 0.5
@@ -4299,7 +4304,7 @@ MonoBehaviour:
   UICanvas: {fileID: 8816892136611756177}
   SettingsPanel: {fileID: 3383465528937133923}
   player: {fileID: 3464649214200409431}
-  CurrentLanguage: 0
+  CurrentLanguageType: 0
   OnCurrentLanguageChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4568,6 +4573,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4589,6 +4596,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 519467019
   m_SortingLayer: 4
   m_SortingOrder: 1

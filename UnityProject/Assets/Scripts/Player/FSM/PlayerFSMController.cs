@@ -7,6 +7,7 @@ namespace ToyGame.FSM
     public class PlayerFSMController : MonoBehaviour
     {
         public Dictionary<PlayerStateType, PlayerState> StateCollection = new();
+        //
         [field: SerializeField] public PlayerState CurrentState { get; private set; }
         public PlayerStateType CurrentStateType => CurrentState?.StateType ?? PlayerStateType.Normal;
 

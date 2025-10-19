@@ -4,9 +4,12 @@ using ToyGame.Physics;
 namespace ToyGame.FSM
 {
     public abstract class PlayerState : MonoBehaviour
+    //classe do player
     {
         protected Player player => GetComponentInParent<Player>();
+        //instancia da classe player recebe o componente do objeto, chamado player
         protected PlayerFSMController fsm => player.fsm;
+        //
         protected IAnimationPlayer animationPlayer => player as IAnimationPlayer;
         protected PlayerMover playerMover => player.playerMover;
         protected bool CanMove

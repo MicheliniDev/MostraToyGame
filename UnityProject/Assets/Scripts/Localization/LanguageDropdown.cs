@@ -11,15 +11,15 @@ namespace ToyGame
     public class LanguageDropdown : MonoBehaviour
     {
         private TMP_Dropdown dropdown;
-        private LanguageType currentLanguage
+        private LanguageType currentLanguageType
         {
             get
             {
-                return GameManager.instance.CurrentLanguage;
+                return GameManager.instance.CurrentLanguageType;
             }
             set
             {
-                GameManager.instance.CurrentLanguage = value;
+                GameManager.instance.CurrentLanguageType = value;
             }
         }
 
@@ -35,7 +35,7 @@ namespace ToyGame
             }
             dropdown.AddOptions(options);
 
-            dropdown.value = (int)currentLanguage;
+            dropdown.value = (int)currentLanguageType;
             dropdown.RefreshShownValue();
 
             dropdown.onValueChanged.AddListener(OnLanguageChanged);
@@ -43,7 +43,7 @@ namespace ToyGame
 
         private void OnLanguageChanged(int index)
         {
-            currentLanguage = (LanguageType)index;
+            currentLanguageType = (LanguageType)index;
             GameManager.instance.OnCurrentLanguageChanged?.Invoke();
         }
     }

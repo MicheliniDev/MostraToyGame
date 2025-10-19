@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace ToyGame
 {
@@ -18,7 +19,8 @@ namespace ToyGame
         public GameObject SettingsPanel;
         public Player player;
 
-        public LanguageType CurrentLanguage = LanguageType.PT_BR;
+        [FormerlySerializedAs("CurrentLanguage")] 
+        public LanguageType CurrentLanguageType = LanguageType.PT_BR;
         public UnityEvent OnCurrentLanguageChanged;
 
         public bool isPaused;
@@ -44,7 +46,8 @@ namespace ToyGame
                 position = playerStartPos
             };
             InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
-            player.transform.position = new Vector3(-5.86f, 1f, 0.01120768f);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         public void QuitGame()
@@ -76,6 +79,8 @@ namespace ToyGame
             yield return StartCoroutine(FadeOutLoadingScreen());
 
             InputManager.instance.SwitchCurrentActionMap(InputMap.UI);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         public void Pause()
@@ -85,6 +90,8 @@ namespace ToyGame
             FadeInPauseMenu();
             SoundManager.instance.MuffleBGM(.5f);
             InputManager.instance.SwitchCurrentActionMap(InputMap.UI);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
         public void Resume()
@@ -101,6 +108,8 @@ namespace ToyGame
         {
             yield return null;
             InputManager.instance.SwitchCurrentActionMap(InputMap.Gameplay);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         public void LoadLevel(SceneConnection levelConnection)

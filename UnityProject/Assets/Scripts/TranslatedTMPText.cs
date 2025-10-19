@@ -22,7 +22,7 @@ namespace ToyGame
         {
             foreach (LocalizedString localization in localizations)
             {
-                if (localization.language == GameManager.instance.CurrentLanguage)
+                if (localization.language == GameManager.instance.CurrentLanguageType)
                 {
                     bindText.text = localization.text;
                     break;

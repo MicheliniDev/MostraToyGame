@@ -41,10 +41,9 @@ namespace ToyGame
         }
 
 
-        public void SetAudioVolume(Slider volume)
+        public void SetAudioVolume(Slider volumeSlider)
         {
-            SoundManager.instance.AmbienceVolume = volume.value;
-            SoundManager.instance.SFXVolume = volume.value;
+            SoundManager.instance.SetSoundVolume(volumeSlider);
         }
 
         public void Quit()
